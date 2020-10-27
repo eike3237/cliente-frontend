@@ -15,7 +15,7 @@ export default class Main extends Component {
     }
 
     componentDidMount() { /*é executado sempre após um metodo construtor, antes de renderizar no metodo render*/
-        fetch(`http://localhost:3003/sistema/usuarios`)/*ele acessa o backend*/
+        fetch(`${process.env.REACT_APP_API_URL}/sistema/usuarios`)/*ele acessa o backend*/
             .then(usuario =>/*arrow function comum*/
                 usuario.json().then(usuario => this.setState({ usuario }))/*armazena no state usuario os usuarios que foram pegos do bd "usuario"*/
             )
@@ -49,7 +49,7 @@ export default class Main extends Component {
                                 <th scope="row">{usuario.id}</th>
                                 <td>{usuario.nome}</td>
                                 <td>{usuario.salario.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'})}</td>
-                                <td>{new Date(usuario.dataNascimento).toLocaleDateString('pt-BR', { year: 'numeric', month: '2-digit', day: '2-digit' })}</td>
+                                <td>{new Date(usuario.dataNascimento).toLocaleDateString('pt-BR', { year: 'numeric', month: '2-digit', day: '2-digit', timeZone: 'UTC' })}</td>
                                 <td>{usuario.ativo ? "Sim" : "Não"}</td>
                                 <td>< Link to={`/usuarios/${usuario.id}`}>
                                     <button type="button" class="btn btn-outline-primary">
