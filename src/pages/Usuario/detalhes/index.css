@@ -1,0 +1,37 @@
+.usuario-info {
+    max-width: 700px;
+    margin: 20px auto 0;
+    padding: 0 20px 5px;
+    background:  linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%) no-repeat;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    
+}
+ 
+.usuario-info h1 {
+    font-size: 32px;
+    color:#fff ;
+    line-height: 24px;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+#user{
+    text-align: center;
+}
+
+.btn-secondary{
+    margin: 2px;
+}
+
+.btn-danger{
+    margin: 2px;
+}
+
+.btn-warning{
+    margin: 2px;
+}
+
+.buttons{
+   
+}

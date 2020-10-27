@@ -1,0 +1,49 @@
+.usuario-list{
+    margin: 20px auto 0;
+    padding: 10px 20px; /*Original -  0 20px*/
+    max-width: 800px; /*ORIGINAL = 700*/
+    background-color: rgb(221, 221, 209); /*Adicionado*/
+    border-radius: 5px;/*Adicionado*/
+    box-shadow: 5px 5px 10px grey;/*Adicionado*/
+    font-size: 18px; /*Adicionado*/
+}
+
+.usuario-list article{
+    background: aliceblue;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.usuario-list article p{
+    font-size: 16px;
+    color: dimgray;
+    margin-top: 5px;
+    line-height: 24px;
+}
+
+.usuario-list article a{
+    height: 42px;
+    border-radius: 5px;
+    border: 2px solid black;
+    background: none;
+    margin-top: 10px;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.usuario-list article a:hover{
+    background: rgb(41, 199, 238);
+    color: #fff;
+}
+
+.usuario-list table-hover {
+    max-width: 70em; /*deixando ficar dentro da classe mãe da lista*/
+}
+
